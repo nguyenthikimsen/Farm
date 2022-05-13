@@ -13,9 +13,11 @@
   left: 0;
   z-index: 1030;
 }
+
 .header__pd {
   padding: 0 40px;
 }
+
 .header .header__layout a {
   position: relative;
   color: #fb801e;
@@ -23,16 +25,19 @@
   transition: all 0.5s;
   cursor: pointer;
 }
+
 .header__layout .header__logo {
   font-size: 16px;
   position: absolute;
   left: 40%;
   transform: translateX(-40%);
 }
+
 .header__right {
   display: flex;
   align-items: center;
 }
+
 .header__right-search input {
   width: 35px;
   height: 35px;
@@ -43,11 +48,13 @@
   border-radius: 10em;
   transition: all 0.5s;
 }
+
 .header__right-search input:focus {
   padding-left: 32px;
   width: 200px;
   border-radius: 20px;
 }
+
 .form-control.header-search-box {
   box-shadow: none;
   border-color: #eee;
@@ -58,34 +65,42 @@
   font-size: 20px;
   margin: 0 16px;
 }
+
 .header__right-menu {
   position: relative;
 }
+
 .header__right-menu .header__right-menu-toggle {
   border-color: transparent;
   background: transparent;
 }
+
 .header__right-menu .header__right-menu-toggle:focus {
   outline: none;
 }
+
 .header__right-menu-toggle i {
   color: white;
   font-size: 30px;
 }
+
 .header__right-menu-item {
   position: absolute;
   top: 100%;
   right: 0;
   z-index: 2;
 }
+
 .header__right-menu-layout {
   border-radius: 5px;
   padding: 5px 0;
 }
+
 .header__right-menu-content {
   padding: 0px;
   margin: 0;
 }
+
 .header__right-menu-item .header__right-menu-content a {
   text-decoration: none;
   color: black;
@@ -98,14 +113,17 @@
   width: 230px;
   display: block;
 }
+
 .header__right-menu-item li:hover a {
   color: #fb801e;
 }
+
 .header__right-menu-item li {
   list-style: none;
   text-align: center;
   margin-top: 18px;
 }
+
 .header__right-menu-item li:nth-child(1) {
   margin-top: 0;
 }
@@ -115,8 +133,9 @@
   position: relative;
   height: 100vh;
 }
-.banner__layout {
-}
+
+.banner__layout {}
+
 .banner__content {
   position: absolute;
   top: 50%;
@@ -125,6 +144,7 @@
   z-index: 2;
   width: 40%;
 }
+
 .banner__content h2 {
   color: #f4f4f4;
   font-size: 120px;
@@ -134,17 +154,20 @@
   left: -10%;
   z-index: 0;
 }
+
 .banner__content h1 {
   font-size: 50px;
   font-weight: 900;
   position: relative;
 }
+
 .banner__content p {
   color: #707070;
   font-size: 20px;
   font-family: 'Source Sans Pro', sans-serif;
   margin: 20px 0 50px 0;
 }
+
 .banner__content a {
   color: white;
   padding: 16px 34px;
@@ -155,6 +178,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
+
 .banner__carousel {
   position: absolute;
   right: 0;
@@ -171,11 +195,13 @@
   border-radius: 50%;
   margin-right: 10px;
 }
+
 .banner__carousel-dot .active {
   background-color: #fb801e;
   width: 12px;
   height: 12px;
 }
+
 .banner__carousel-overlay::before {
   content: '';
   width: 100%;
@@ -184,6 +210,7 @@
   background-color: rgb(0 0 0 / 17%);
   /* z-index: 2; */
 }
+
 .banner__carousel img {
   width: 100%;
   object-fit: cover;
@@ -191,12 +218,87 @@
   /* position: relative;
   z-index: 0; */
 }
+
 .banner__carousel-note {
   bottom: 50px;
   right: 20px;
   left: auto;
 }
+
 .banner__carousel-note span {
   font-weight: 600;
   font-size: 24px;
+}
+
+/* offer */
+/*-- container --*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*-- //container --*/
+
+.offer--logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.offer--item {
+  margin-top: 30px;
+}
+
+.offer--item a {
+  border-radius: 10px;
+  border: 1px solid #00000000;
+  padding: 2rem 1rem;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+}
+
+.offer--para h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+
+.offer--para p {
+  margin: 10px 0 0 0;
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #707070;
+}
+
+.offer--item a:hover {
+  border: 1px solid #00000036;
+}
+
+.offer--item a:hover .offer--para h4 {
+  color: #009f4d;
 }
