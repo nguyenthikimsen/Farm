@@ -1,421 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm</title>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Farm</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;400;600&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Volkhov:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:wght@200;400;600&family=Volkhov:wght@400;700&display=swap"
-    rel="stylesheet" />
-  <!-- fancybox -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-  <!-- css -->
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
-
-<body>
-  <!-- header -->
-  <header class="header">
-    <div class="container header__pd">
-      <nav class="navbar navbar-light">
-        <div class="container-fluid header__layout">
-          <a class="navbar-brand">
-            <i class="fas fa-leaf header__logo"></i>
-            Farmstead</a>
-          <!-- header__search -->
-          <div class="header__right">
-            <div class="header__right-search">
-              <form class="d-flex">
-                <input class="form-control me-2 header-search-box" type="search" aria-label="Search" />
-              </form>
-            </div>
-            <div class="header__right-dark">
-              <i class="far fa-moon"></i>
-            </div>
-
-            <div class="header__right-menu">
-              <nav class="navbar navbar-light">
-                <button class="header__right-menu-toggle" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-                </button>
-
-                <div class="collapse header__right-menu-item" id="navbarToggleExternalContent">
-                  <div class="bg-light header__right-menu-layout">
-                    <ul class="header__right-menu-content">
-                      <li>
-                        <a href="#">Home</a>
-                      </li>
-                      <li>
-                        <a href="#">about</a>
-                      </li>
-                      <li>
-                        <a href="#">services</a>
-                      </li>
-                      <li>
-                        <a href="#">blog posts</a>
-                      </li>
-                      <li>
-                        <a href="#">landing page</a>
-                      </li>
-                      <li>
-                        <a href="#">elements page</a>
-                      </li>
-                      <li>
-                        <a href="#">404 page</a>
-                      </li>
-                      <li>
-                        <a href="#">contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-
-    <!-- banner -->
-  <section class="banner container-fluid">
-      <div class="banner__layout row g-0">
-        <!-- banner-content -->
-        <div class="banner__content col-12 col-sm-12 col-md-5">
-          <div class="banner__content-title">
-            <h2>Farm</h2>
-            <h1>
-              Welcome to Farmstead <br />
-              where Natural Food is born!
-            </h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-            <a href="#">LEARN MORE</a>
-          </div>
-        </div>
-        <!-- banner-img -->
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide banner__carousel col-12 col-sm-12 col-md-7"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators banner__carousel-dot">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-
-          <div class="carousel-item banner__carousel-overlay">
-            <img src="./images/b8.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block banner__carousel-note">
-              <h5><span>02</span>/03</h5>
-              <p>Farm Field</p>
-            </div>
-          </div>
-
-          <div class="carousel-item banner__carousel-overlay">
-            <img src="./images/b4.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block banner__carousel-note">
-              <h5><span>03</span>/03</h5>
-              <p>Organic Farm</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <body>
+  </div>
     
-  </section>
-  <!-- grow -->
-  <section class="grow">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 grow__left">
-          <h4>Grow Naturally</h4>
-          <h1>Leaders in the field</h1>
-          <p>
-            Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
-            nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
-            eros et, sed commodo risus. Nullam sit amet laoreet elit.
-            Suspendisse non init magnaa velit efficitur, dolor eget ex
-            fermentum.
-          </p>
-          <a href="#">DISCOVER MORE</a>
-        </div>
-        <div class="col-lg-6 grow__right">
-          <div class="row g-4">
-            <div class="col-6">
-              <div class="grow__item">
-                <div class="grow__item-content">
-                  <img src="./images/img4.png" alt="" />
-                  <a class="d-block" href="#">Natural Products</a>
+
+    <!-- offer -->
+    <section class="offer">
+      <div class="container">
+        <div class="offer--content row">
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img5.png" alt="" />
                 </div>
               </div>
-            </div>
-
-            <div class="col-6">
-              <div class="grow__item">
-                <div class="grow__item-content">
-                  <img src="./images/img2.png" alt="" />
-                  <a class="d-block" href="#">Wheat Cultivation</a>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Agriculture</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
                 </div>
               </div>
-            </div>
-
-            <div class="col-6">
-              <div class="grow__item">
-                <div class="grow__item-content">
-                  <img src="./images/img1.png" alt="" />
-                  <a class="d-block" href="#">Modern Truck</a>
+            </a>
+          </div>
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img6.png" alt="" />
                 </div>
               </div>
-            </div>
-
-            <div class="col-6">
-              <div class="grow__item">
-                <div class="grow__item-content">
-                  <img src="./images/img3.png" alt="" />
-                  <a class="d-block" href="#">Organic Products</a>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Fresh</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- service -->
-  <!-- choose -->
-  <!-- offer -->
-  <section class="offer">
-    <div class="container">
-      <div class="offer--content row">
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img5.png" alt="">
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img7.png" alt="" />
+                </div>
               </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Agriculture</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Natural</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img6.png" alt="">
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Fresh</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img7.png" alt="">
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Natural</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img8.png" alt="">
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Farm</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img9.png" alt="">
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Organic</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="offer--item col-lg-4 col-md-6">
-          <a href="#" class="row">
-            <div class="col-3">
-              <div class="offer--logo">
-                <img src="./images/img10.png" alt="">
-              </div>
-            </div>
-            <div class="col-9">
-              <div class="offer--para">
-                <h4>Dairy</h4>
-                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="gallery">
-    <div class="container column">
-      <div class="gallery--list row">
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item gallery--para">
-            <h5>Gallery</h5>
-            <h3>Our Products</h3>
-            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
-            <a href="" class="btn btn-primary btn-style">DISCOVER MORE</a>
+            </a>
           </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g2.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g2.jpg" alt=" ">
-                <h5 class="gallery--text">Fresh Carrots</h5>
-              </figure>
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img8.png" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Farm</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img9.png" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Organic</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="offer--item col-lg-4 col-md-6">
+            <a href="#" class="row">
+              <div class="col-3">
+                <div class="offer--logo">
+                  <img src="./images/img10.png" alt="" />
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="offer--para">
+                  <h4>Dairy</h4>
+                  <p>
+                    Ras effic itur metusga via suscipit consectetur adipisicing
+                    unde omnis.
+                  </p>
+                </div>
+              </div>
             </a>
           </div>
         </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g3.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g3.jpg" alt=" ">
-                <h5 class="gallery--text">Strawberry</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g6.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g6.jpg" alt=" ">
-                <h5 class="gallery--text">Our Farm</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding ">
-          <div class="gallery--item">
-            <a href="./images/g5.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g5.jpg" alt=" ">
-                <h5 class="gallery--text">Fresh Apples</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g1.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g1.jpg" alt=" ">
-                <h5 class="gallery--text">Awesome Fields</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g7.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g7.jpg" alt=" ">
-                <h5 class="gallery--text">Fresh Grapes</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-6 gallery--padding">
-          <div class="gallery--item">
-            <a href="./images/g8.jpg" data-fancybox="gallery">
-              <figure>
-                <img src="./images/g8.jpg" alt=" ">
-                <h5 class="gallery--text">Hot Papper</h5>
-              </figure>
-            </a>
-          </div>
-        </div>
-        
       </div>
     </section>
-    
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container column">
+        <div class="gallery--list row">
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item gallery--para">
+              <h5>Gallery</h5>
+              <h3>Our Products</h3>
+              <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+              <a href="" class="btn btn-primary btn-style">DISCOVER MORE</a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g2.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g2.jpg" alt=" " />
+                  <h5 class="gallery--text">Fresh Carrots</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g3.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g3.jpg" alt=" " />
+                  <h5 class="gallery--text">Strawberry</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g6.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g6.jpg" alt=" " />
+                  <h5 class="gallery--text">Our Farm</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g5.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g5.jpg" alt=" " />
+                  <h5 class="gallery--text">Fresh Apples</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g1.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g1.jpg" alt=" " />
+                  <h5 class="gallery--text">Awesome Fields</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g7.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g7.jpg" alt=" " />
+                  <h5 class="gallery--text">Fresh Grapes</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 gallery--padding">
+            <div class="gallery--item">
+              <a href="./images/g8.jpg" data-fancybox="gallery">
+                <figure>
+                  <img src="./images/g8.jpg" alt=" " />
+                  <h5 class="gallery--text">Hot Papper</h5>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- grow -->
     <!-- service -->
     <!-- choose -->
@@ -427,6 +268,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- fancybox -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   </body>
 </html>
