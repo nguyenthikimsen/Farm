@@ -302,3 +302,102 @@
 .offer--item a:hover .offer--para h4 {
   color: #009f4d;
 }
+
+/* Gallery */
+.gallery {
+  padding: 48px 0;
+  margin-bottom: 24px;
+}
+
+.gallery--list {
+  padding: 48px 15px;
+}
+
+.gallery .row {
+  padding: 0;
+}
+
+.gallery--item figure {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+.gallery--item figure::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  transform: skewX(-17deg);
+}
+
+.gallery--item figure::before:hover {
+  left: 125%;
+}
+
+.gallery--item img {
+  width: 100%;
+}
+
+.column {
+  padding: 48px 15px;
+}
+
+.gallery--padding {
+  padding: 0;
+}
+
+.gallery--text {
+  position: absolute;
+  z-index: 0;
+  color: #fff;
+  bottom: 0;
+  font-weight: bold;
+  background: rgb(255 255 255 / 27%);
+  padding: 6px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.gallery--para h5 {
+  font-size: 22px;
+  color: #fb801e;
+  font-family: 'Volkhov', serif;
+}
+
+.gallery--para h3 {
+  color: #060606;
+  font-size: 40px;
+  font-family: 'Volkhov', serif;
+}
+
+.gallery--para p {
+  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #707070;
+  margin: 8px 0 0;
+}
+
+.btn-style {
+  font-size: 16px;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb801e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all .25s ease-in-out;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 24px;
+}
+
+.btn-style:hover {
+  background: #009f4d;
+}
