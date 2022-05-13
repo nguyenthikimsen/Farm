@@ -336,8 +336,14 @@
   transform: skewX(-17deg);
 }
 
-.gallery--item figure::before:hover {
-  left: 125%;
+.gallery--item figure:hover::before {
+  animation: toRight 0.95s;
+}
+
+@keyframes toRight {
+  100% {
+    left: 125%;
+  }
 }
 
 .gallery--item img {
