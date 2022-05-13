@@ -41,7 +41,7 @@
 
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header fixed-top">
       <div class="container header__pd">
         <nav class="navbar navbar-light">
           <div class="container-fluid header__layout">
@@ -120,22 +120,27 @@
     </header>
 
     <!-- banner -->
-    <section class="banner">
-      <div class="banner__layout d-flex">
+    <section class="banner container-fluid">
+      <div class="banner__layout row g-0">
         <!-- banner-content -->
-        <div class="banner__content">
-          <h2>Farm</h2>
-          <h1>Welcome to Farmstead where Natural Food is born!</h1>
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium.
-          </p>
-          <a href="#">LEARN MORE</a>
+        <div class="banner__content col-12 col-sm-12 col-md-5">
+          <div class="banner__content-title">
+            <h2>Farm</h2>
+            <h1>
+              Welcome to Farmstead <br />
+              where Natural Food is born!
+            </h1>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
         </div>
         <!-- banner-img -->
         <div
           id="carouselExampleCaptions"
-          class="carousel slide banner__carousel"
+          class="carousel slide banner__carousel col-12 col-sm-12 col-md-7"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators banner__carousel-dot">
@@ -195,6 +200,63 @@
       </div>
     </section>
     <!-- grow -->
+    <section class="grow">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 grow__left">
+            <h4>Grow Naturally</h4>
+            <h1>Leaders in the field</h1>
+            <p>
+              Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+              nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+              eros et, sed commodo risus. Nullam sit amet laoreet elit.
+              Suspendisse non init magnaa velit efficitur, dolor eget ex
+              fermentum.
+            </p>
+            <a href="#">DISCOVER MORE</a>
+          </div>
+          <div class="col-lg-6 grow__right">
+            <div class="row g-4">
+              <div class="col-6">
+                <div class="grow__item">
+                  <div class="grow__item-content">
+                    <img src="./images/img4.png" alt="" />
+                    <a class="d-block" href="#">Natural Products</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="grow__item">
+                  <div class="grow__item-content">
+                    <img src="./images/img2.png" alt="" />
+                    <a class="d-block" href="#">Wheat Cultivation</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="grow__item">
+                  <div class="grow__item-content">
+                    <img src="./images/img1.png" alt="" />
+                    <a class="d-block" href="#">Modern Truck</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="grow__item">
+                  <div class="grow__item-content">
+                    <img src="./images/img3.png" alt="" />
+                    <a class="d-block" href="#">Organic Products</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- service -->
     <!-- choose -->
 
