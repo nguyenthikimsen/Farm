@@ -13,11 +13,25 @@
   right: 0;
   left: 0;
   z-index: 1030;
+  transition: 0.6s;
+}
+header.sticky {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+}
+header.sticky .header__layout a {
+  color: black;
+}
+header.sticky .header__right-dark i {
+  color: black;
+}
+header.sticky .header__right-menu-toggle i {
+  color: black;
 }
 
 .header__pd {
   /* padding: 0 40px; */
-  padding: 0;
+  /* padding: 0; */
 }
 .header__layout {
   padding: 0;
@@ -390,6 +404,70 @@
   font-size: 18px;
 }
 
+/* choose */
+.choose__layout {
+  padding: 100px 0;
+}
+.choose__left-title h4 {
+  color: #fb801e;
+}
+.choose__left-title h1 {
+  font-weight: bold;
+}
+.choose__left-title p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.choose__left-item {
+  display: flex;
+}
+.choose__left-item i {
+  display: block;
+  color: #fb801e;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.choose__item-content h4 {
+  font-weight: bold;
+}
+.choose__item-content p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #707070;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.choose__right {
+  position: relative;
+  padding-left: 150px;
+}
+.choose__right img {
+  border-radius: 30px;
+  width: 100%;
+}
+.choose__right-year {
+  background-color: #fb801e;
+  width: 300px;
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  border-radius: 0 0 100px 0;
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+}
+.choose__right-year h3 {
+  font-size: 78px;
+  font-weight: bold;
+}
+.choose__right-year p {
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
 @media (max-width: 1400px) {
   .banner__content-title h2 {
     top: -70px;
@@ -404,7 +482,20 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .choose__right {
+    padding-left: 100px;
+  }
+  .choose__right-year {
+    bottom: 30px;
+    left: 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .header .header__layout a {
+    color: #fff;
+  }
   .banner__layout {
     /* padding: 30px; */
   }
@@ -418,6 +509,7 @@
     background-color: #fff;
     /* padding: 90px 10px 50px 60px; */
     border-radius: 10px;
+    padding: 80px 20px 60px 60px;
   }
   .banner__content-title h2 {
     top: 24px;
@@ -430,7 +522,13 @@
   .banner__content-title p {
     font-size: 16px;
   }
-  /* service */
+  /* choose */
+  .choose__right {
+    padding-left: 12px;
+  }
+  .choose__right-year {
+    left: -10%;
+  }
 }
 
 /* sen */
