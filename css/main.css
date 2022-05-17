@@ -303,6 +303,14 @@
   color: #009f4d;
 }
 
+@media (max-width: 450px) {
+  .gallery--grid:nth-child(1) {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
 /* Gallery */
 .gallery {
   padding: 48px 0;
