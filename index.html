@@ -44,14 +44,14 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <!-- sen -->
     <!-- header -->
     <header class="header fixed-top">
       <div class="container header__pd">
         <nav class="navbar navbar-light">
           <div class="container-fluid header__layout">
-            <a class="navbar-brand">
+            <a class="navbar-brand header__icon">
               <i class="fas fa-leaf header__logo"></i>
               Farmstead</a
             >
@@ -67,7 +67,10 @@
                 </form>
               </div>
               <div class="header__right-dark">
-                <i class="far fa-moon"></i>
+                <button class="header__dark-btn" id="switchButton">
+                  <i class="far fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
               </div>
 
               <div class="header__right-menu">
@@ -174,9 +177,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active banner__carousel-overlay">
               <img src="./images/b1.jpg" class="d-block w-100" alt="..." />
-              <div
-                class="carousel-caption d-none d-md-block banner__carousel-note"
-              >
+              <div class="carousel-caption banner__carousel-note">
                 <h5><span>01</span>/03</h5>
                 <p>Agriculture</p>
               </div>
@@ -184,9 +185,7 @@
 
             <div class="carousel-item banner__carousel-overlay">
               <img src="./images/b8.jpg" class="d-block w-100" alt="..." />
-              <div
-                class="carousel-caption d-none d-md-block banner__carousel-note"
-              >
+              <div class="carousel-caption banner__carousel-note">
                 <h5><span>02</span>/03</h5>
                 <p>Farm Field</p>
               </div>
@@ -194,9 +193,7 @@
 
             <div class="carousel-item banner__carousel-overlay">
               <img src="./images/b4.jpg" class="d-block w-100" alt="..." />
-              <div
-                class="carousel-caption d-none d-md-block banner__carousel-note"
-              >
+              <div class="carousel-caption banner__carousel-note">
                 <h5><span>03</span>/03</h5>
                 <p>Organic Farm</p>
               </div>
@@ -208,7 +205,7 @@
     <!-- grow -->
     <section class="grow">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-lg-6 grow__left">
             <h4>Grow Naturally</h4>
             <h1>Leaders in the field</h1>
@@ -361,7 +358,7 @@
                   <div class="choose__left-item">
                     <i class="far fa-life-ring"></i>
                     <div class="choose__item-content">
-                      <h4>Qualified Staff</h4>
+                      <h4>Excellent Service</h4>
                       <p>
                         Sed ut perspiciatis unde omnis iste natus error sit.
                       </p>
@@ -398,6 +395,12 @@
         var header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
       });
+    </script>
+    <!-- Darkmode -->
+    <script type="text/javascript">
+      document.getElementById('switchButton').onclick = function () {
+        document.getElementById('myBody').classList.toggle('dark');
+      };
     </script>
   </body>
 </html>
